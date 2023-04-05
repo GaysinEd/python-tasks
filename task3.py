@@ -8,10 +8,10 @@
 Например, строка "Этот сайт для неудачников, ЛОЛ!" станет "Ths wbst s fr lsrs LL!".
 """
 
+
 def disemvowel(string):
-    letters = 'a','e','u','i','o','A','E','U','I','O'
+    letters = 'a', 'e', 'u', 'i', 'o', 'A', 'E', 'U', 'I', 'O'
     for i in string:
         if i in letters:
             string = string.replace(i, '')
-    return(string)
-
+    return string
