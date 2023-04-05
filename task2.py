@@ -1,4 +1,5 @@
-'''
+
+"""
 Создайте функцию, которая будет обрезать строку (указан первый аргумент),
  если она длиннее запрошенной максимальной длины строки (указан второй аргумент).
 
@@ -13,16 +14,15 @@
 напримерtrim("He", 1), должен вернуться"H...", потому что 1 <= 3
 
 Запрошенная максимальная длина будет больше 0. Входная строка не будет пустой.
-'''
+"""
+
 
 def trim(phrase, size):
     if len(phrase) <= size:
-        return(phrase)
+        return phrase
     if len(phrase) > size:
         if size <= 3:
-            return(phrase[:size] + '...')
+            return phrase[:size] + '...'
         else:
             length = size - 3
-            return(phrase[:length] + '...')
-
-# тесты
+            return phrase[:length] + '...'
